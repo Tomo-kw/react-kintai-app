@@ -19,4 +19,12 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+  {
+    // Chakra CLI が生成したスニペット。再生成で上書きされるため手を入れずにルールだけ外す
+    files: ['src/components/ui/**/*.tsx'],
+    rules: {
+      '@typescript-eslint/no-empty-object-type': 'off',
+      'react-refresh/only-export-components': 'off',
+    },
+  },
 ])

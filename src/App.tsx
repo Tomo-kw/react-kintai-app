@@ -1,5 +1,7 @@
+import { Heading } from '@chakra-ui/react'
+
 function App() {
-  return <h1>勤怠管理</h1>
+  return <Heading>勤怠管理</Heading>
 }
 
 export default App
